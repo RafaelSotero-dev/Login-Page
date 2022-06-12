@@ -5,5 +5,10 @@
 
 <h2>Tela de login para smartphones</h2> 
 <div align="center">
-  <img align="center" src="./screenshots/loginMobile.png"/>
+  <img src="./screenshots/loginMobile.png"/>
 <div>
+  
+<h2 align="left">Gif da tela principal</h2>
+<div>
+  <img src="./screenshots/gif-loginPage.gif">
+</div>
