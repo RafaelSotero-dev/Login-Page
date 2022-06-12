@@ -13,9 +13,26 @@ body {
 
 main {
   height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.conteiner-img {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.conteiner-img .img {
+  width: 70%;
+}
+
+.conteiner-form {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
 }
 
 .form {
@@ -27,7 +44,7 @@ main {
   border-radius: 2rem;
   box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.35);
   height: 400px;
-  width: 400px;
+  width: 70%;
 }
 
 .form h2 {
@@ -104,4 +121,77 @@ main {
 
 button:hover {
   background-position: right center
+}
+
+@media (max-width: 450px) {
+  main {
+    flex-direction: column;
+  }
+
+  .conteiner-img {
+    width: 100%;
+  }
+
+  .conteiner-form {
+    width: 100%;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+
+  .conteiner-img {
+    width: 90%;
+  }
+
+  .conteiner-form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 950px) {
+  .form {
+    width: 90%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .form h2 {
+    font-size: 0px;
+  }
+
+  .conteiner-form {
+    height: 40%;
+  }
+
+  .form {
+    height: 100%;
+  }
+
+  .conteiner-inputs {
+    height: 50%;
+  }
+
+  .conteiner-inputs-email .email {
+    font-size: 28px;
+  }
+
+.conteiner-inputs-email input:focus + label,
+.conteiner-inputs-email input:not(:placeholder-shown) + label{
+  font-size: 18px;
+  margin-top: 0;
+  color: #3951b2;
+}
+
+.form h2 {
+  font-size: 50px;
+}
+
 }
