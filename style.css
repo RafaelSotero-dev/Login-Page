@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffff;  
+  border-radius: 2rem;
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.35);
+  height: 400px;
+  width: 400px;
+}
+
+.form h2 {
+  padding-bottom: 3rem;
+}
+
+.conteiner-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+  text-align: left;
+  width: 90%;
+  height: 150px;
+}
+
+.conteiner-inputs-email {
+  position: relative;
+  padding-top: 13px;
+  margin-bottom: 1rem;
+}
+
+.conteiner-inputs-email .email:focus{
+  border-bottom: 2px solid #3951b2;
+}
+
+.conteiner-inputs-email .email::placeholder{
+  color:transparent;
+}
+
+.conteiner-inputs-email .label-email {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+}
+
+.conteiner-inputs-email .email {
+  border: 0;
+  border-bottom: 2px solid lightgrey;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -webkit-appearance:none;
+  border-radius:0;
+}
+
+.conteiner-inputs-email input:focus + label,
+.conteiner-inputs-email input:not(:placeholder-shown) + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #3951b2;
+}
+
+.button {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-size: 200% auto;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-position: right center
+}
