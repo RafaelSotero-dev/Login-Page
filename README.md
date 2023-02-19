@@ -1,6 +1,6 @@
 # Login page
 
-Este projeto é uma página de login básica, criada usando HTML, CSS e JavaScript.
+Este projeto é uma página de login básica, criada usando HTML e CSS.
 
 ## Como executar o projeto
 Para executar o projeto, siga estas etapas:
